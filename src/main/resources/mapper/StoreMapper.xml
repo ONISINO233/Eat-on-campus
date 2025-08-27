@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="onisino.eatoncampus.Mapper.StoreMapper">
+
+    <resultMap id="StoreMap" type="onisino.eatoncampus.entity.Store">
+        <id property="storeId" column="store_id"/>
+        <result property="storeName" column="store_name"/>
+        <result property="storeDescription" column="store_description"/>
+        <result property="storePictureId" column="store_picture_id"/>
+    </resultMap>
+
+    <select id="SelectAllStore" resultMap="StoreMap">
+        select * from store
+    </select>
+
+</mapper>

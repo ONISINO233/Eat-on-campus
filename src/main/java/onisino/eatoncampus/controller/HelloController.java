@@ -17,4 +17,9 @@ public class HelloController {
     public String fuck(){
         return "Fuck U!";
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "Test";
+    }
 }
